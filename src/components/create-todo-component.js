@@ -1,4 +1,5 @@
-import React, { Component } from 'react'; 
+import React, { Component } from 'react';
+import axios from 'axios';
 
 export default class CreateTodo extends Component {
 
@@ -36,6 +37,15 @@ export default class CreateTodo extends Component {
         console.log(`Todo Description: ${this.state.todo_priority}`);
         console.log(`Todo Description: ${this.state.todo_completed}`);
 
+        const newTodo = {
+          todo_description: this.state.todo_description,
+          todo_priority: this.state.todo_priority,
+          todo_completed: this.state.todo_completed
+        }
+
+        axios.post('http://localhost:4000/todos/add', newTodo)
+             .then(res => console.log(res.data)); 
+
         this.setState({
             todo_description: '',
             todo_priority: 'Low',
@@ -66,7 +76,7 @@ export default class CreateTodo extends Component {
                                id="priorityLow"
                                value="Low"
                                checked={this.state.todo_prioirty === "Low"}
-                               onChange={this.onChangeTodoPriority} 
+                               onChange={this.onChangeTodoPriority}
                                />
                         <label className="form-check-label">Low</label>
                     </div>
@@ -78,7 +88,7 @@ export default class CreateTodo extends Component {
                                id="priorityMedium"
                                value="Medium"
                                checked={this.state.todo_prioirty === "Medium"}
-                               onChange={this.onChangeTodoPriority} 
+                               onChange={this.onChangeTodoPriority}
                                />
                         <label className="form-check-label">Medium</label>
                     </div>
@@ -90,13 +100,13 @@ export default class CreateTodo extends Component {
                                id="priorityHigh"
                                value="High"
                                checked={this.state.todo_prioirty === "High"}
-                               onChange={this.onChangeTodoPriority} 
+                               onChange={this.onChangeTodoPriority}
                                />
                         <label className="form-check-label">High</label>
                     </div>
                     <div className="form-group"
 >                       <input type="submit" vaue="Create Todo" className="btn btn-primary" />
-                    </div>               
+                    </div>
                 </form>
             </div>
         )
