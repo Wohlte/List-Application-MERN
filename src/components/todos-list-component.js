@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const Todo = props => (
-  <tr>
+  <tr className="todoEntry">
     <td>{props.todo.todo_description}</td>
     <td>{props.todo.todo_priority}</td>
     <td>
@@ -38,15 +38,7 @@ export default class TodosList extends Component {
     render() {
         return (
             <div>
-                <h3>Todos List</h3>
                 <table className="table table-striped" style={{marginTop:20}}>
-                  <thead>
-                    <tr>
-                      <th>Description</th>
-                      <th>Priority</th>
-                      <th>Actions</th>
-                    </tr>
-                  </thead>
                   <tbody>
                     {this.todoList() }
                   </tbody>
