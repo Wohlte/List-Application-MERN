@@ -64,40 +64,37 @@ export default class CreateTodo extends Component {
                 </form>
 
                 <form onSubmit={this.onSubmit}>
-                    <div className="form-check form-check-inline">
+                    <div className="container">
                         <input type="radio"
-                               className="form-check-input"
                                name="priorityOptions"
                                id="priorityLow"
                                value="Low"
                                checked={this.state.todo_prioirty === "Low"}
                                onChange={this.onChangeTodoPriority}
                                />
-                        <label className="form-check-label">Low</label>
+                        <label className="label">Low</label>
                     </div>
 
-                    <div className="form-check form-check-inline">
+                    <div className="container">
                         <input type="radio"
-                               className="form-check-input"
                                name="priorityOptions"
                                id="priorityMedium"
                                value="Medium"
                                checked={this.state.todo_prioirty === "Medium"}
                                onChange={this.onChangeTodoPriority}
                                />
-                        <label className="form-check-label">Medium</label>
+                             <label className="label">Medium</label>
                     </div>
 
-                    <div className="form-check form-check-inline">
+                    <div className="container">
                         <input type="radio"
-                               className="form-check-input"
                                name="priorityOptions"
                                id="priorityHigh"
                                value="High"
                                checked={this.state.todo_prioirty === "High"}
                                onChange={this.onChangeTodoPriority}
                                />
-                        <label className="form-check-label">High</label>
+                        <label className="label">High</label>
                     </div>
                     <div className="form-group"
 >                       <input type="submit" vaue="Create Todo" className="button" />

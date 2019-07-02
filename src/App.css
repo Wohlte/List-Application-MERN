@@ -31,6 +31,26 @@ html {
   animation: panning 140s infinite linear;
 }
 
+td {
+  border: 0!important;
+  margin-bottom:10px!important;
+  color: #383838;
+  height:55px;
+  padding-bottom:2px;
+}
+
+th {
+  margin-top:20px;
+}
+
+.todosTable {
+  width:75%;
+  margin-left:10%;
+}
+
+tbody {
+  float:center;
+}
 
 .body {
   margin-top:250px;
@@ -39,7 +59,7 @@ html {
 
 .siteheader {
   font-family: arial;
-  font-size: 300%;
+  font-size: 260%;
   color: #fff;
   font-weight: bold;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
@@ -80,6 +100,10 @@ html {
   border: 1px solid #5964f8;
 }
 
+.container {
+  display:inline-block;
+}
+
 .sitebody {
   background:rgba(255,255,255,0);
   margin-top:300px;
@@ -90,6 +114,14 @@ html {
   font-size: 65%;
   margin-left:35px;
   margin-right:35px;
+  margin-bottom:100px;
+}
+
+.label {
+  padding-top:7px;
+  margin-left:5px;
+  font-size:140%;
+  color: #383838;
 }
 
 input {
@@ -144,12 +176,11 @@ input:focus {
   list-style: none;
   padding: 10px 10px 10px 10px;
   background:rgba(255,255,255,0.3);
-  color: #5a5a5a;
+  color: #383838;
   font-size: 15px;
   transition: 0.2s;
   margin-bottom: 10px;
   width: 50%;
-
 }
 
 .tasklist {
