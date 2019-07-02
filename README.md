@@ -1,6 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
+This project was developed primarily using the tutorial series by CodingTheSmartWay:
+https://www.youtube.com/watch?v=qvBZevK1HPo
+
+
 To run mongoDB server:
 window 1: mongod --config /usr/local/etc/mongod.conf
 window 2: mongo
