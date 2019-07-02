@@ -28,13 +28,6 @@ todoRoutes.route('/').get(function(req, res) {
     });
 });
 
-todoRoutes.route('/:id').get(function(req, res) {
-    let id = req.params.id;
-    Todo.findById(id, function(err, todo) {
-        res.json(todo);
-    });
-});
-
 todoRoutes.route('/add').post(function(req, res) {
     let todo = new Todo(req.body);
     todo.save()
