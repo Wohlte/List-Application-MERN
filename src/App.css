@@ -1,0 +1,276 @@
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes panning {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 70% 70%;
+  }
+   50% {
+    background-position: 70% 0%;
+  }
+  75% {
+    background-position: 0 70%;
+  }
+  200% {
+    background-position: 0 0;
+  }
+}
+
+html {
+  background: url(https://i.imgur.com/31iNVcR.jpg) no-repeat center center fixed;
+  background-size: cover;
+  animation: panning 140s infinite linear;
+}
+
+.form-check-label {
+  margin-left:5px;
+  margin-right:30px;
+  padding-top:16px;
+}
+
+.form-check-label {
+  font-size: 140%;
+  color:white;
+  font-weight:bold;
+  text-shadow:1px 1px rgba(0,0,0,0.25);
+}
+
+td {
+  border: 0!important;
+  margin-bottom:10px!important;
+  color: #383838;
+  height:55px;
+  padding-bottom:2px;
+}
+
+th {
+  margin-top:20px;
+}
+
+.todosTable {
+  width:75%;
+  margin-left:10%;
+}
+
+tbody {
+  float:center;
+}
+
+.body {
+  margin-top:250px;
+  margin-left:10%;
+}
+
+.siteheader {
+  font-family: arial;
+  font-size: 260%;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+  margin-right:30px;
+}
+
+.siteheader:hover {
+  color:#fff;
+}
+
+.subheadertext {
+  font-family: arial;
+  font-size: 80%;
+  margin-top: -25px;
+}
+
+.navbutton {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background: #323fef;
+  border: 1px solid #323fef;
+  color: white;
+  width: 100px;
+  float: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 0;
+  font-family: arial;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 2px;
+  /* box-shadow: 2px 2px #c8c8c8; */
+}
+
+.navbutton:hover {
+  background: #5964f8;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #5964f8;
+}
+
+.radio-toolbar input[type="radio"] {
+  display: none;
+}
+
+.radio-toolbar label {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 4px 11px;
+  font-family: Arial;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+  background-color: #bbb;
+}
+
+.container {
+  display:inline-block;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .radio {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .radio {
+  background-color: #2196F3;
+}
+
+.sitebody {
+  background:rgba(255,255,255,0);
+  margin-top:300px;
+  font-family: arial;
+  padding: 30px 40px;
+  color: #323fef;
+  text-align: center;
+  font-size: 65%;
+  margin-left:35px;
+  margin-right:35px;
+  margin-bottom:100px;
+}
+
+.label {
+  padding-top:7px;
+  margin-left:5px;
+  font-size:140%;
+  color: #383838;
+}
+
+input {
+  background:rgba(255,255,255,0.6);
+  font: arial;
+  margin: 0;
+  border: 0;
+  width: 50%;
+  height:40px;
+  padding: 7px;
+  float: center;
+  font-size: 16px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+input:focus {
+  background:rgba(255,255,255,0.75);
+  outline-style: none;
+}
+
+.button {
+  font-family: arial;
+  background: rgba(50,63,239,0.55);
+  border: 0;
+  color: white;
+  padding: 9px;
+  padding-right:11px;
+  margin-right: 2px;
+  width: 80px;
+  height:30px;
+  font-size: 13px;
+  float: center;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.button:hover {
+  background: rgba(50,63,239,0.65);
+  border: 0;
+}
+
+.todoEntry {
+  font-family: "Helvetica", arial;
+  cursor: pointer;
+  position: center;
+  list-style: none;
+  padding: 10px 10px 10px 10px;
+  background:rgba(255,255,255,0.3);
+  color: #383838;
+  font-size: 15px;
+  transition: 0.2s;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.tasklist {
+  font-family: arial;
+  font-size: 100%;
+  color: #7c7c7c;
+  margin-top: 25px;
+}
+
+.clearbutton {
+  font-family: arial;
+  background: #323fef;
+  border: 1px solid #323fef;
+  color: white;
+  padding: 9px;
+  margin-right: 2px;
+  width: 100px;
+  font-size: 12px;
+  float: center;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.clearbutton:hover {
+  background: #5964f8;
+  border: 1px solid #5964f8;
+}
+
+.about {
+  font-family: arial;
+  cursor: pointer;
+  position: center;
+  list-style: none;
+  padding: 45px 45px 45px 45px;
+  margin-right: 25px;
+  background: rgba(255, 255, 255, 0.4);
+  color: #3e3e3e;
+  font-size: 13px;
+  transition: 0.2s;
+  margin-top: 45px;
+  margin-bottom: 5px;
+  width: 70%;
+}
