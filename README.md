@@ -1,3 +1,5 @@
+Deployed using heroku with help from this viideo tutorial from Esterling Accime: https://www.youtube.com/watch?v=e1LaekAnVIM. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
